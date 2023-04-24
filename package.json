@@ -2,7 +2,7 @@
   "name": "educator-js-codespace-template",
   "version": "1.0.0",
   "description": "Educator JS Codespace Template",
-  "source": "src/index.html",
+  "source": "index.html",
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/microsoft/codespaces-teaching-template-js/issues"
   },
-  "homepage": "http://juliamuiruri4.github.io/codespaces-project-template-js",
+  "homepage": "https://juliamuiruri4.github.io/codespaces-project-template-js",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
