@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "Educator JS Codespace Template",
   "source": "src/index.html",
+  "homepage": "https://juliamuiruri4.github.io/Portfolio",
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build"
+    "build-gh": "parcel build --public-url 'https://juliamuiruri4.github.io/Portfolio'",
+    "predeploy": "npm run build-gh",
+    "deploy" : "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -18,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/microsoft/codespaces-teaching-template-js/issues"
   },
-  "homepage": "https://juliamuiruri4.github.io/codespaces-project-template-js",
+  
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
