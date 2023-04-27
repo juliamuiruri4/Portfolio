@@ -25,8 +25,7 @@ import "./styles.css";
  */
 const siteProps = {
   name: "Julia Muiruri",
-  title: "Cloud Advocate",
-  email: "julia@example.com",
+  title: "Cloud Advocate at Microsoft",
   gitHub: "juliamuiruri4",
   instagram: "juliamuiruri4",
   linkedIn: "juliamuiruri",

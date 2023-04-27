@@ -47,21 +47,23 @@ const projectList = [
 const Portfolio = () => {
   return (
     <section className="light" id="portfolio">
-      <h2>Portfolio</h2>
-      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
-          <img src={image} style={{ height: "90%", width: "100%", objectFit: "cover" }} />
-        </div>
-        <div className="container">
-          {projectList.map((project) => (
-            <div className="box">
-              <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
-              <p className="small">{project.description}</p>
-            </div>
-          ))}
-        </div>
+    <h2>Portfolio</h2>
+    <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
+      <div style={{ maxWidth: "40%", alignSelf: "center" }}>
+        <img src={image} style={{ height: "90%", width: "100%", objectFit: "cover" }} />
       </div>
-    </section>
+      <div className="container">
+        {projectList.map((project) => (
+          <div className="box">
+            <a href={project.url} target="_blank" rel="noopener noreferrer">
+              <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
+            </a>
+            <p className="small">{project.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
   );
 };
 
